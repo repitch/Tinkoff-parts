@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fab="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/fabSubstrate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_semi_transparent"></FrameLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="20dp"
+        fab:menu_colorNormal="@color/yellow"
+        fab:menu_colorPressed="@color/yellow_pressed"
+        fab:menu_labels_textColor="@color/grey"
+        fab:menu_labels_colorNormal="@color/white"
+        fab:menu_icon="@drawable/ic_cross"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/famTaxes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_docs"
+            fab:fab_colorNormal="@color/light_blue"
+            fab:fab_colorPressed="@color/light_blue_pressed"
+            fab:fab_size="mini"
+            fab:fab_label="Налоги" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/famBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_budget"
+            fab:fab_colorNormal="@color/light_blue"
+            fab:fab_colorPressed="@color/light_blue_pressed"
+            fab:fab_size="mini"
+            fab:fab_label="В бюджет" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/famPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_photo"
+            fab:fab_colorNormal="@color/light_blue"
+            fab:fab_colorPressed="@color/light_blue_pressed"
+            fab:fab_size="mini"
+            fab:fab_label="Контрагенту по фото платежа" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/famContragent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_agent"
+            fab:fab_colorNormal="@color/light_blue"
+            fab:fab_colorPressed="@color/light_blue_pressed"
+            fab:fab_size="mini"
+            fab:fab_label="Контрагенту" />
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>
